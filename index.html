@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-do-vanilla-js</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="input-form">
+          <input type="text" placeholder="Type your todo list" />
+        </div>
+        <div class="task-status-container">
+          <div class="left-side">
+            <img src="seen.png" alt="" id="complete-task" />
+            <p id="complete-all-tasks">Complete all tasks</p>
+          </div>
+          <div class="right-side">clear completed</div>
+        </div>
+        <div class="task-details-container">
+          <div class="left-side-container"></div>
+          <div class="right-side-container"></div>
+        </div>
+        <hr />
+        <div class="task-category-container">
+          <div class="left-task-category">3 tasks left</div>
+          <div class="right-task-category">
+            <ul>
+              <li>All</li>
+              <li>Uncomplete</li>
+              <li>Completed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

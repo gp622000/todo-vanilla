@@ -1,0 +1,70 @@
+body {
+  background-color: lightgray;
+}
+
+.container {
+  width: 70%;
+  background-color: white;
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
+}
+
+.input-form input {
+  width: 95%;
+  height: 40px;
+  background-color: rgb(233, 233, 233);
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  color: rgb(129, 126, 126);
+}
+
+.task-status-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: grey;
+}
+
+.left-side {
+  display: flex;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.left-side img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.task-details-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side-container {
+  display: flex;
+  margin-right: 10px;
+}
+
+.task-category-container {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
