@@ -11,7 +11,7 @@ body {
 }
 
 .input-form input {
-  width: 95%;
+  width: 96%;
   height: 40px;
   background-color: rgb(233, 233, 233);
   border: none;
@@ -43,13 +43,13 @@ p {
 }
 
 .task-details-container {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 .left-side-container {
   display: flex;
-  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .task-category-container {
