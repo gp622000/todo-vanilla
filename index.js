@@ -1,9 +1,10 @@
 const input = document.querySelector("#input");
 const details = document.querySelector(".task-details-container");
 var tasks = [];
+var taskCount = 0;
 input.addEventListener("keyup", (event) => {
   if (event.keyCode === 13) {
-    event.preventDefault();
+    // event.preventDefault();
     const inputValue = input.value;
     // div.left-side-container created
     const taskDetailsInner = document.createElement("div");
@@ -45,6 +46,7 @@ input.addEventListener("keyup", (event) => {
     details.appendChild(taskDetailsInner);
   }
   const taskInner = document.querySelectorAll(".task-details-inner-container");
+  taskCount = taskInner.length;
   for (let i = 0; i < taskInner.length; i++) {
     taskInner[i].style.display = "flex";
     taskInner[i].style.width = "100%";
@@ -69,4 +71,7 @@ input.addEventListener("keyup", (event) => {
   //   div1.style.fontSize = "1.2rem";
   //   checkbox.style.marginRight = "10px";
   //   checkbox.style.fontSize = "1.2rem";
+  const taskLeft = document.querySelector(".left-task-category");
+  taskLeft.innerText = `${taskCount} tasks left`;
+  console.log(taskCount);
 });
